@@ -10,7 +10,6 @@ import heapq
 
 
 
-
 bak = "backup file"
 
 
@@ -152,11 +151,11 @@ def import_bk_file():
         deal_input(i)
 
 def export_bk_file():
-    messagebox.showinfo("咕咕", "鸽")
+    messagebox.showinfo("X咕X咕X", "鸽")
 
 def export_score():
     res = ""
-    for i in range(1, 50):
+    for i in range(1, 50): # need to be fix
         res += str(scores[i]) + "\n"
     pc.copy(res)
     messagebox.showinfo("Congratulations!", "分数信息已经逐行复制到剪贴板!")
